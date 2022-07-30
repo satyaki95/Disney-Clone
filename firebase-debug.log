@@ -1,0 +1,116 @@
+[debug] [2022-07-30T21:08:36.578Z] ----------------------------------------------------------------------
+[debug] [2022-07-30T21:08:36.580Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\satya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-30T21:08:36.580Z] CLI Version:   11.4.0
+[debug] [2022-07-30T21:08:36.580Z] Platform:      win32
+[debug] [2022-07-30T21:08:36.581Z] Node Version:  v16.16.0
+[debug] [2022-07-30T21:08:36.581Z] Time:          Sun Jul 31 2022 02:38:36 GMT+0530 (India Standard Time)
+[debug] [2022-07-30T21:08:36.581Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-30T21:08:36.638Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-30T21:08:36.639Z] > authorizing via signed-in user (www.satyaki95@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\disney-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-30T21:08:42.830Z] Using project from CLI flag: disneyplus-clone-a33d5
+[debug] [2022-07-30T21:08:42.836Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 [none]
+[debug] [2022-07-30T21:08:43.701Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 403
+[debug] [2022-07-30T21:08:43.701Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-30T21:08:43.702Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-30T21:08:43.973Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\satya\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\satya\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project disneyplus-clone-a33d5. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-07-30T21:09:58.311Z] ----------------------------------------------------------------------
+[debug] [2022-07-30T21:09:58.313Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\satya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-07-30T21:09:58.313Z] CLI Version:   11.4.0
+[debug] [2022-07-30T21:09:58.313Z] Platform:      win32
+[debug] [2022-07-30T21:09:58.314Z] Node Version:  v16.16.0
+[debug] [2022-07-30T21:09:58.314Z] Time:          Sun Jul 31 2022 02:39:58 GMT+0530 (India Standard Time)
+[debug] [2022-07-30T21:09:58.314Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-30T21:09:58.374Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-30T21:09:58.374Z] > authorizing via signed-in user (www.satyaki95@gmail.com)
+[debug] [2022-07-30T21:09:58.374Z] [iam] checking project disneyplus-clone-a33d5 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-07-30T21:09:58.376Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions [none]
+[debug] [2022-07-30T21:09:58.377Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions x-goog-quota-user=projects/disneyplus-clone-a33d5
+[debug] [2022-07-30T21:09:58.377Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-07-30T21:10:00.113Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions 200
+[debug] [2022-07-30T21:10:00.113Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions {}
+[debug] [2022-07-30T21:10:00.113Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project disneyplus-clone-a33d5:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-07-30T21:10:00.114Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 [none]
+[debug] [2022-07-30T21:10:00.970Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 403
+[debug] [2022-07-30T21:10:00.970Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-30T21:10:00.971Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-30T21:10:01.344Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\satya\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\satya\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project disneyplus-clone-a33d5. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-07-30T21:10:13.595Z] ----------------------------------------------------------------------
+[debug] [2022-07-30T21:10:13.597Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\satya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-07-30T21:10:13.597Z] CLI Version:   11.4.0
+[debug] [2022-07-30T21:10:13.598Z] Platform:      win32
+[debug] [2022-07-30T21:10:13.598Z] Node Version:  v16.16.0
+[debug] [2022-07-30T21:10:13.598Z] Time:          Sun Jul 31 2022 02:40:13 GMT+0530 (India Standard Time)
+[debug] [2022-07-30T21:10:13.598Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-30T21:10:13.657Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-30T21:10:13.657Z] > authorizing via signed-in user (www.satyaki95@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\disney-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-07-30T21:10:38.535Z] Using project from CLI flag: disneyplus-clone-a33d5
+[debug] [2022-07-30T21:10:38.537Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 [none]
+[debug] [2022-07-30T21:10:39.681Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 403
+[debug] [2022-07-30T21:10:39.681Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-07-30T21:10:39.682Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-07-30T21:10:40.041Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\satya\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\satya\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project disneyplus-clone-a33d5. Please make sure the project exists and your account has permission to access it.
